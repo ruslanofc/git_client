@@ -1,26 +1,50 @@
-import React from 'react';
-import logo from './logo.svg';
+//import React, { useState, Component } from 'react';
 import './App.css';
+// import {AUTH_TOKEN} from './authtoken.js';
+// import {Redirect, Route, Switch} from "react-router";
+// import PrivateRoute from "./Components/privateRoute";
+// import MainPage from "./Components/MainPage";
+// import Login from "./Components/LoginPage";
+//import AppHeader from "./Components/Header";
+import React from 'react';
+//import MainPage from "./Components/MainPage";
+import LoginPage from "./Components/LoginPage";
+
+// const App = () => {
+
+//   let [token, updateToken] = useState(localStorage.getItem(AUTH_TOKEN))
+
+//   const login = (newToken) => {
+//     localStorage.setItem(AUTH_TOKEN, newToken);
+//     updateToken(localStorage.getItem(AUTH_TOKEN));
+//   };
+
+//   const logout = () => {
+//     localStorage.removeItem(AUTH_TOKEN);
+//     updateToken(localStorage.getItem(AUTH_TOKEN));
+//   };
+
+//   return (
+//     <div>
+//       <Redirect from="/" to="" />
+//       <Switch>
+//         <Route exact path='/login'>
+//           <Login login={login}/>
+//         </Route>
+//         <PrivateRoute path="" token={token}>
+//           <AppHeader token={token} logout={logout}/>
+//           <MainPage/>
+//         </PrivateRoute>
+//       </Switch>
+//     </div>
+//   )};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>GAvno</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React 
-        </a>
-      </header>
+    <div>
+      <LoginPage/>
     </div>
-  );
+  )
 }
 
 export default App;
