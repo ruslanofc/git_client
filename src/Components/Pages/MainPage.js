@@ -1,6 +1,6 @@
 import React from "react";
 import {makeStyles} from "@material-ui/core";
-//import Navigation from "./Navigation";
+import PanelNavigation from "../PanelNavigation";
 
 
 const useStyles = makeStyles(theme => ({
@@ -18,13 +18,14 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-const MainPage = () => {
+export default function MainPage() {
     const classes = useStyles();
+
     return (
         <div className={classes.mainSection}>
             <div className={classes.content}>
-                
+                <PanelNavigation/>
             </div>
         </div>
-    )
-};
+    );
+}

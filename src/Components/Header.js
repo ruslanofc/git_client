@@ -2,34 +2,36 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    background: 'black'
+    background: 'black',
+    textTransform: 'downcase'
   },
   menuButton: {
     marginRight: theme.spacing(2),
   },
-  title: {
-    flexGrow: 1,
-    color: "black"
+  logoutButton: {   
+    marginLeft: 860,
+    textTransform: "lowcase"
   },
 }));
 
-export default function ButtonAppBar() {
+
+
+export default function ButtonAppBar({logout}) {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar color="primary" position="static">
         <Toolbar>
-          <Typography variant="h6" className={classes.title}>
-            GitHub Client
-          </Typography>
-          <Button color="black">Logout</Button>
+          <Button href="/my_profile">GC</Button>
+          <div className={classes.logoutButton}>
+            <Button className={classes.logoutButton} onClick={logout}>Logout</Button>
+          </div>
         </Toolbar>
       </AppBar>
     </div>
