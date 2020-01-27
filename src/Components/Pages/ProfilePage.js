@@ -55,7 +55,7 @@ export default function ProfilePage({data, entity}) {
                 </a>
               </div>   
             </div>
-            <div className={classes.extended}>
+            <div className={classes.description}>
               {extended && 
                 <>
                   <Typography variant="body2" component="p">

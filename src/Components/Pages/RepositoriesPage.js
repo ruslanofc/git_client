@@ -84,7 +84,7 @@ export default function RepositoriesPage() {
           </List>           
         </Grid>
       </Grid>
-      <Button className={classes.moreButton} variant="contained" color="primary"
+      <Button className={classes.moreButton} variant="contained" color="white"
             onClick={() => (setSecondary(!secondary))}>
       {secondary ? "Less info" : "More info"}
       </Button>

@@ -3,7 +3,7 @@ const profilePageStyle = {
   profile: {
     textAlign: "center",
     "& img": {
-      maxWidth: "160px",
+      maxWidth: "260px",
       width: "100%",
       margin: "35 auto",
       transform: "translate3d(0, -50%, 0)"
@@ -11,9 +11,10 @@ const profilePageStyle = {
   },
   description: {
     margin: "0 auto",
-    width: "70%",
-    color: "#999",
-    textAlign: "center !important"
+    width: "40%",
+    textAlign: "left !important",
+    marginTop: "30px",
+    color: 'black'
   },
   page: {
     maxwidth: '600px',
@@ -27,8 +28,8 @@ const profilePageStyle = {
     position: "relative",
     minWidth: "70vw",
     zIndex: "1",
-    marginTop: "40px",
-    minHeight: "600px"
+    marginTop: "20px",
+    minHeight: "650px"
   },
   mainRaised: {
     margin: "60px  30px 0px",
@@ -56,21 +57,6 @@ const profilePageStyle = {
     display: "center",
     position: "relative",
   },
-  socials: {
-    marginTop: "0",
-    width: "100%",
-    transform: "none",
-    left: "0",
-    top: "0",
-    height: "100%",
-    lineHeight: "41px",
-    fontSize: "20px",
-    color: "#999"
-  },
-  navWrapper: {
-    margin: "20px auto 50px auto",
-    textAlign: "center"
-  },
   moreButton: {
     margin: 16,
   },
@@ -79,9 +65,6 @@ const profilePageStyle = {
     display: 'flex',
     justifyContent: "center",
   },
-  extended: {
-    color: 'black'
-  }
 };
 
 export default profilePageStyle;
